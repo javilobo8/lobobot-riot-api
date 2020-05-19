@@ -1,0 +1,151 @@
+{
+  "companion": {
+    "content_ID": "e561dda1-f3cc-4a77-b578-7ff29fbb9a30",
+    "skin_ID": 4,
+    "species": "PetGhosty"
+  },
+  "gold_left": 7,
+  "last_round": 42,
+  "level": 8,
+  "placement": 2,
+  "players_eliminated": 2,
+  "puuid": "4pEGqevk2fBrCTwGciy32kVdS1qbbhcxW1Zckb8odNnMJOh3VaZ19tCLjj9fvDCD_tJUiU650aeJvg",
+  "time_eliminated": 2379.0029296875,
+  "total_damage_to_players": 188,
+  "traits": [
+    {
+      "name": "Chrono",
+      "num_units": 2,
+      "style": 1,
+      "tier_current": 1,
+      "tier_total": 3
+    },
+    {
+      "name": "Cybernetic",
+      "num_units": 1,
+      "style": 0,
+      "tier_current": 0,
+      "tier_total": 2
+    },
+    {
+      "name": "DarkStar",
+      "num_units": 1,
+      "style": 0,
+      "tier_current": 0,
+      "tier_total": 3
+    },
+    {
+      "name": "ManaReaver",
+      "num_units": 1,
+      "style": 0,
+      "tier_current": 0,
+      "tier_total": 1
+    },
+    {
+      "name": "Protector",
+      "num_units": 2,
+      "style": 1,
+      "tier_current": 1,
+      "tier_total": 3
+    },
+    {
+      "name": "Set3_Blademaster",
+      "num_units": 3,
+      "style": 1,
+      "tier_current": 1,
+      "tier_total": 3
+    },
+    {
+      "name": "Set3_Celestial",
+      "num_units": 4,
+      "style": 2,
+      "tier_current": 2,
+      "tier_total": 3
+    },
+    {
+      "name": "Sniper",
+      "num_units": 2,
+      "style": 3,
+      "tier_current": 1,
+      "tier_total": 1
+    }
+  ],
+  "units": [
+    {
+      "character_id": "TFT3_Fiora",
+      "items": [
+        67
+      ],
+      "name": "",
+      "rarity": 0,
+      "tier": 3
+    },
+    {
+      "character_id": "TFT3_Caitlyn",
+      "items": [
+        11,
+        29
+      ],
+      "name": "",
+      "rarity": 0,
+      "tier": 3
+    },
+    {
+      "character_id": "TFT3_JarvanIV",
+      "items": [
+        35,
+        45
+      ],
+      "name": "",
+      "rarity": 0,
+      "tier": 3
+    },
+    {
+      "character_id": "TFT3_Xayah",
+      "items": [
+        15,
+        19,
+        24
+      ],
+      "name": "",
+      "rarity": 0,
+      "tier": 3
+    },
+    {
+      "character_id": "TFT3_Shen",
+      "items": [
+        99,
+        23,
+        14
+      ],
+      "name": "",
+      "rarity": 1,
+      "tier": 2
+    },
+    {
+      "character_id": "TFT3_Rakan",
+      "items": [
+        5
+      ],
+      "name": "",
+      "rarity": 1,
+      "tier": 2
+    },
+    {
+      "character_id": "TFT3_Kassadin",
+      "items": [],
+      "name": "",
+      "rarity": 2,
+      "tier": 2
+    },
+    {
+      "character_id": "TFT3_Ashe",
+      "items": [
+        23
+      ],
+      "name": "",
+      "rarity": 2,
+      "tier": 2
+    }
+  ]
+}
