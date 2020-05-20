@@ -1,15 +1,28 @@
 {
-  "name": "riot-api",
-  "version": "1.0.0",
+  "name": "lobobot-riot-api",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index",
+  "types": "./typings/index.d.ts",
+  "files": [
+    "src/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit test",
+    "docs": "jsdoc src/**/*.js -d docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "Javier Bermúdez Lobo <jbermudezlobo@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "riot-ratelimiter": "^0.1.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.0.0",
+    "jsdoc": "^3.6.4",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1"
   }
 }

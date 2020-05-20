@@ -1,0 +1,9 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "typeRoots": [
+    "src/**/*"
+  ],
+  "checkJs": false
+}
