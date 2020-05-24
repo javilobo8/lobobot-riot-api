@@ -1,7 +1,7 @@
 {
   "name": "lobobot-riot-api",
   "version": "0.0.1",
-  "description": "",
+  "description": "Riot API Wrapper in NodeJS",
   "main": "./src/index",
   "types": "./typings/index.d.ts",
   "files": [
@@ -9,13 +9,15 @@
   ],
   "scripts": {
     "test": "mocha --exit test",
+    "coverage": "nyc mocha -- --exit test",
+    "lint": "eslint src test",
     "docs": "jsdoc src/**/*.js -d docs"
   },
   "keywords": [],
   "author": "Javier Bermúdez Lobo <jbermudezlobo@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "request": "^2.88.2",
     "riot-ratelimiter": "^0.1.5"
   },
   "devDependencies": {
@@ -24,5 +26,11 @@
     "jsdoc": "^3.6.4",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1"
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "text-summary"
+    ]
   }
 }

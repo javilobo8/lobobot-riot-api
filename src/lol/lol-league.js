@@ -1,25 +1,29 @@
-const getResponseData = require('../utils/get-response-data');
 const {getPlatformHost} = require('../utils/get-platform');
 
 /**
  * LOLLeague
  *
  * @param {number} version
- * @param {AxiosInstance} client
+ * @param {function} client
  */
 function LOLLeague(version, client) {
-  return {
-    /**
-     * entriesBySummonerId
-     *
-     * @param {string} platform
-     * @param {string} summonerId
-     */
-    entriesBySummonerId(platform, summonerId) {
-      const url = `${getPlatformHost(platform)}/lol/league/v${version}/entries/by-summoner/${summonerId}`;
-      return getResponseData(client, { url });
-    },
-  };
+  switch (version) {
+    case 4: return {
+      /**
+       * entriesBySummonerId
+       *
+       * @param {string} platform
+       * @param {string} summonerId
+       */
+      entriesBySummonerId(platform, summonerId) {
+        const url = `${getPlatformHost(platform)}/lol/league/v4/entries/by-summoner/${summonerId}`;
+        return client(url);
+      },
+    };
+    default:
+  }
+
+  throw new Error(`Invalid version ${version} in LOLLeague`);
 }
 
 module.exports = LOLLeague;

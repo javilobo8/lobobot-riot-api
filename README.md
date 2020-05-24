@@ -1,4 +1,4 @@
-# Riot API Wrapper for NodeJS
+# lobobot-riot-api
 
 Another NodeJS wrapper for Riot API
 
@@ -17,10 +17,12 @@ npm i -S lobobot-riot-api
 const RiotAPI = require('lobobot-riot-api');
 
 const api = RiotAPI({
-  lolKey: 'XXXX',
-  tftKey: 'XXXX',
-  lorKey: 'XXXX',
-  valKey: 'XXXX',
+  keys: {
+    lolKey: 'XXXX',
+    tftKey: 'XXXX',
+    lorKey: 'XXXX',
+    valKey: 'XXXX',
+  }
 });
 
 api.tft.summonerV1.byName('EUW', 'Lobo Bot')

@@ -9,7 +9,7 @@ describe('RiotAPI', () => {
 
   describe('when initialize', () => {
     it('should return the correct interface', () => {
-      const api = RiotAPI({ lolKey: 'test-key' });
+      const api = RiotAPI({ keys: { lolKey: 'test-key' } });
 
       expect(api.lol).to.exist;
       expect(api.tft).to.exist;

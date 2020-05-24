@@ -8,7 +8,7 @@ const {
 /**
  * getPlatformHost
  *
- * @param {Platform} platform
+ * @param {string} platform
  * @returns {string}
  */
 function getPlatformHost(platform) {
@@ -22,7 +22,7 @@ function getPlatformHost(platform) {
 /**
  * getRegionFromPlatform
  *
- * @param {Platform} platform
+ * @param {string} platform
  * @returns {string}
  */
 function getRegionFromPlatform(platform) {

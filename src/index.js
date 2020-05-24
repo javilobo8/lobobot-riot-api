@@ -1,5 +1,5 @@
-const axios = require('axios').default;
 const validateConfig = require('./utils/validate-config');
+const createLimiter = require('./utils/create-limiter');
 
 const LOLSummoner = require('./lol/lol-summoner');
 const LOLLeague = require('./lol/lol-league');
@@ -18,26 +18,18 @@ const {
 } = require('./constants');
 
 /**
- * createClient
- * 
- * @param {string} apiKey
- * @returns {AxiosInstance}
- */
-function createClient(apiKey) {
-  return axios.create({ headers: { 'X-Riot-Token': apiKey } });
-}
-
-/**
  * RiotAPI
  *
- * @param {Config} config
+ * @param {object} keys
  */
-function RiotAPI(config) {
-  validateConfig(config);
+function RiotAPI({ keys, options = {} } = { }) {
+  validateConfig(keys);
 
   const clients = {
-    lol: createClient(config.lolKey),
-    tft: createClient(config.tftKey),
+    lol: createLimiter(keys.lolKey, options.limiterStrategy),
+    tft: createLimiter(keys.tftKey, options.limiterStrategy),
+    lor: null,
+    val: null,
   };
 
   return {
@@ -51,12 +43,8 @@ function RiotAPI(config) {
       leagueV1: TFTLeague(1, clients.tft),
       matchV1: TFTMatch(1, clients.tft),
     },
-    lor: {
-      
-    },
-    val: {
-
-    }
+    lor: { },
+    val: { },
   };
 }
 
