@@ -5,6 +5,7 @@ Another NodeJS wrapper for Riot API
 ## Features
 
 * Multiple key support for LOL, LOR, TFT and VALORANT
+* Rate limiting with [https://github.com/Colorfulstan/RiotRateLimiter-node](https://github.com/Colorfulstan/RiotRateLimiter-node)
 
 ## Installation
 

@@ -11,7 +11,10 @@
     "test": "mocha --exit test",
     "coverage": "nyc mocha -- --exit test",
     "lint": "eslint src test",
-    "docs": "jsdoc src/**/*.js -d docs"
+    "docs": "jsdoc src/**/*.js -d docs",
+    "publish-patch": "np patch",
+    "publish-minor": "np minor",
+    "publish-major": "np major"
   },
   "keywords": [],
   "author": "Javier Bermúdez Lobo <jbermudezlobo@gmail.com>",
@@ -25,6 +28,7 @@
     "eslint": "^7.0.0",
     "jsdoc": "^3.6.4",
     "mocha": "^7.1.2",
+    "np": "^6.2.3",
     "nyc": "^15.0.1"
   },
   "nyc": {
