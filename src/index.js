@@ -4,6 +4,7 @@ const createLimiter = require('./utils/create-limiter');
 const LOLSummoner = require('./lol/lol-summoner');
 const LOLLeague = require('./lol/lol-league');
 const LOLMatch = require('./lol/lol-match');
+const LOLSpectator = require('./lol/lol-spectator');
 
 const TFTSummoner = require('./tft/tft-summoner');
 const TFTLeague = require('./tft/tft-league');
@@ -37,6 +38,7 @@ function RiotAPI({ keys, options = {} } = { }) {
       summonerV4: LOLSummoner(4, clients.lol),
       leagueV4: LOLLeague(4, clients.lol),
       matchV4: LOLMatch(4, clients.lol),
+      spectatorV4: LOLSpectator(4, clients.lol),
     },
     tft: {
       summonerV1: TFTSummoner(1, clients.tft),
