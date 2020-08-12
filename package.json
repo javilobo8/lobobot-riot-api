@@ -1,6 +1,6 @@
 {
   "name": "lobobot-riot-api",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Riot API Wrapper in NodeJS",
   "main": "./src/index",
   "types": "./typings/index.d.ts",
