@@ -15,8 +15,8 @@ function LOLSpectator(version, client) {
        * @param {string} platform
        * @param {string} summonerId
        */
-      activeGamesBySummoner(platform, summonerId, params = {}) {
-        const url = `${getPlatformHost(platform)}/lol/match/v4/active-games/by-summoner/${summonerId}`;
+      activeGamesBySummoner(platform, summonerId) {
+        const url = `${getPlatformHost(platform)}/lol/spectator/v4/active-games/by-summoner/${summonerId}`;
         return client(url);
       },
     };
